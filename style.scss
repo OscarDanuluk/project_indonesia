@@ -121,3 +121,24 @@
 
 }
 }
+.secrets{
+  background: url(/images/landscape.png) no-repeat center/cover;
+  &-numbers{
+    margin-top: 1000px;
+background: #020c21ef;
+  }
+  &__title{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 50px;
+    font-weight: 900;
+}
+&-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  margin-top: 44px;
+}
+
+}
