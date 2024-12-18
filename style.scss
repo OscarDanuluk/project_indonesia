@@ -80,3 +80,44 @@
   }
   background: url(/images/bg-header.png) no-repeat center/cover;
 }
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 200px;
+  padding: 338px 207px;
+  background: url(/images/card-background.jpg) no-repeat center/cover;
+&-card{
+  display: flex;
+  align-items: center;
+  &-info{
+    display: flex;
+    flex-direction:column;
+    row-gap: 10px;
+    &__btn{
+      color: whitesmoke;
+      background: #dd2242;
+      border-radius: 30px;
+      padding: 16px 40px;
+      align-self: flex-start;
+      margin-top: 32px;
+    }
+    &__title{
+      color: whitesmoke;
+    }
+    &__desc{
+      color: grey;
+    }
+  }
+  column-gap: 130px;
+  &__photo{
+    width: 50%;
+    height: 460px;
+    border-radius: 20px;
+    
+    
+
+  }
+
+}
+}
