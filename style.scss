@@ -200,3 +200,31 @@
     margin-bottom: 260px;
   }
 }
+.life{
+  background: url(/images/life-bg.png) no-repeat center/cover;
+  padding: 142px 285px 210px 360px ;
+  display: flex;
+  flex-direction: column;
+  &-cards{
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      &__photo{
+        
+      }
+    }
+  }
+  
+  
+  &__title{
+color: white;
+font-size: 42px;
+text-align: center;
+line-height: 119%;
+font-weight: 700;
+margin-bottom: 120px;
+  }
+  &__poster{
+    margin-bottom: 124px;
+  }
+}
