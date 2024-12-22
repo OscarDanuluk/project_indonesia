@@ -140,8 +140,29 @@ a {
   background: url(/images/landscape.png) no-repeat center/cover;
 }
 .secrets-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 1000px;
   background: rgba(2, 12, 33, 0.937254902);
+}
+.secrets-numbers-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.secrets-numbers__title {
+  margin-top: 200px;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+.secrets-numbers__desc {
+  font-size: 18px;
+  margin-top: 40px;
+  color: gray;
+  text-align: center;
 }
 .secrets__title {
   text-align: center;
@@ -156,4 +177,33 @@ a {
   -moz-column-gap: 60px;
        column-gap: 60px;
   margin-top: 44px;
+}
+
+.learn {
+  background: url();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.learn__title {
+  margin-top: 250px;
+  font-size: 42px;
+  text-align: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.learn__desc {
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+}
+.learn__btn {
+  margin-top: 40px;
+  background: #dd2242;
+  color: whitesmoke;
+  border-radius: 30px;
+  width: 210px;
+  height: 60px;
+  margin-bottom: 260px;
 }

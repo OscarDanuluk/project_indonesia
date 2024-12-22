@@ -47,10 +47,8 @@
     flex-direction: column;
     row-gap: 10px;
     &__number {
-        
       color: red;
       font-weight: 900;
-      
     }
     &__title {
       color: white;
@@ -80,65 +78,118 @@
   }
   background: url(/images/bg-header.png) no-repeat center/cover;
 }
-.main{
+.main {
   display: flex;
   align-items: center;
   flex-direction: column;
   row-gap: 200px;
   padding: 338px 207px;
   background: url(/images/card-background.jpg) no-repeat center/cover;
-&-card{
-  display: flex;
-  align-items: center;
-  &-info{
+  &-card {
     display: flex;
-    flex-direction:column;
-    row-gap: 10px;
-    &__btn{
-      color: whitesmoke;
-      background: #dd2242;
-      border-radius: 30px;
-      padding: 16px 40px;
-      align-self: flex-start;
-      margin-top: 32px;
+    align-items: center;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      &__btn {
+        color: whitesmoke;
+        background: #dd2242;
+        border-radius: 30px;
+        padding: 16px 40px;
+        align-self: flex-start;
+        margin-top: 32px;
+      }
+      &__title {
+        color: whitesmoke;
+      }
+      &__desc {
+        color: grey;
+      }
     }
-    &__title{
-      color: whitesmoke;
+    column-gap: 130px;
+    &__photo {
+      width: 50%;
+      height: 460px;
+      border-radius: 20px;
+    }
+  }
+}
+.secrets {
+  background: url(/images/landscape.png) no-repeat center/cover;
+
+  &-numbers {
+    &-list{
+      display: flex;
+      justify-content: space-between;
+      
+      flex-direction: column;
+      &-cards{
+      
+    }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1000px;
+    background: #020c21ef;
+    &__title {
+      margin-top: 200px;
+      font-size: 60px;
+      font-weight: 700;
+      color: white;
+
     }
     &__desc{
-      color: grey;
+      font-size: 18px;
+      margin-top: 40px;
+      color: gray;
+      text-align: center;
     }
-  }
-  column-gap: 130px;
-  &__photo{
-    width: 50%;
-    height: 460px;
-    border-radius: 20px;
     
-    
-
   }
-
-}
-}
-.secrets{
-  background: url(/images/landscape.png) no-repeat center/cover;
-  &-numbers{
-    margin-top: 1000px;
-background: #020c21ef;
-  }
-  &__title{
+  &__title {
     text-align: center;
     margin-top: 130px;
     font-size: 50px;
     font-weight: 900;
-}
-&-slider{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 60px;
-  margin-top: 44px;
+  }
+  &-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-top: 44px;
+  }
 }
 
+.learn {
+  background: url();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 250px;
+    font-size: 42px;
+    text-align: center;
+    column-gap: 30px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  &__btn {
+    margin-top: 40px;
+    background: #dd2242;
+    color: whitesmoke;
+    border-radius: 30px;
+    width: 210px;
+    height: 60px;
+    margin-bottom: 260px;
+  }
 }
