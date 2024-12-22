@@ -191,7 +191,7 @@ a {
 }
 
 .learn {
-  background: url();
+  background: url(/images/bg-Learn.jpg) no-repeat cover/center;
   display: flex;
   align-items: center;
   justify-content: center;
