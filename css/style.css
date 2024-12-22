@@ -141,26 +141,37 @@ a {
 }
 .secrets-numbers {
   display: flex;
-  align-items: center;
+  padding: 200px 322px 224px 322px;
   justify-content: center;
   flex-direction: column;
   margin-top: 1000px;
   background: rgba(2, 12, 33, 0.937254902);
 }
-.secrets-numbers-list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
 .secrets-numbers__title {
-  margin-top: 200px;
-  font-size: 60px;
-  font-weight: 700;
   color: white;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 36px;
 }
 .secrets-numbers__desc {
+  color: gray;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.secrets-numbers-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.secrets-numbers-cards-item__title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #dd2242;
+  text-align: center;
+}
+.secrets-numbers-cards-item__desc {
   font-size: 18px;
-  margin-top: 40px;
+  margin-top: 18px;
   color: gray;
   text-align: center;
 }
