@@ -258,3 +258,65 @@ a {
 .life__poster {
   margin-bottom: 124px;
 }
+
+.plan {
+  background: #DCE8F2;
+  padding: 120px 390px;
+}
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  position: relative;
+}
+.plan-list::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 83%;
+  background: rgba(0, 0, 0, 0.299);
+  left: -40px;
+}
+.plan-list-item {
+  position: relative;
+}
+.plan-list-item:nth-child(2)::before {
+  content: "2";
+}
+.plan-list-item:nth-child(3)::before {
+  content: "3";
+}
+.plan-list-item::before {
+  content: "1";
+  color: white;
+  background: #dd2242;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: -60px;
+  top: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-list-item__desc {
+  color: grey;
+}
+.plan-list-item__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+.plan__title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 44px;
+}
+.plan__btn {
+  color: white;
+  background: #dd2242;
+  padding: 20px 60px;
+  border-radius: 30px;
+  margin-top: 17px;
+}
