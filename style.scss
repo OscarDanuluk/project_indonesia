@@ -209,7 +209,15 @@
     display: flex;
     justify-content: space-between;
     &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
       &-info {
+      display: flex;
+      flex-direction: column;
+        text-align: left;
+        row-gap: 15px;
+        
         &__title {
           color: white;
 
@@ -217,10 +225,7 @@
         &__desc {
           color: grey;
         }
-        display: flex;
-        text-align: left;
 
-        column-gap: 15px;
       }
       &__photo {
       }
@@ -239,7 +244,7 @@
     margin-bottom: 124px;
   }
 }
-.gallery{
-  &__title
-  font-size: ;
-}
+// .gallery{
+//   &__title
+//   font-size: ;
+// }
