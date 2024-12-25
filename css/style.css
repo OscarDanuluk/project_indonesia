@@ -229,6 +229,18 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.life-cards-item-info {
+  display: flex;
+  text-align: left;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.life-cards-item-info__title {
+  color: white;
+}
+.life-cards-item-info__desc {
+  color: grey;
+}
 .life__title {
   color: white;
   font-size: 42px;
