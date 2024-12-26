@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   padding-top: 28px;
   background: url(/images/bg-header.png) no-repeat center/cover;
@@ -321,17 +325,38 @@ a {
   margin-top: 17px;
 }
 .footer {
+  position: relative;
+  padding: 40px 150px 40px 0px;
   background: #010A20;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+}
+.footer__logo__photo {
+  width: 180px;
+  height: 65px;
 }
 .footer-navigation {
   justify-content: space-between;
   display: flex;
   align-items: center;
 }
+.footer-navigation__arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #dd2242;
+  border-radius: 50%;
+  font-size: 40px;
+  color: whitesmoke;
+  rotate: -90deg;
+  text-align: center;
+}
 .footer-navigation-list {
+  align-items: center;
   -moz-column-gap: 35px;
        column-gap: 35px;
   font-weight: 700;

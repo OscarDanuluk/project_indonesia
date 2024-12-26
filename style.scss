@@ -3,7 +3,9 @@
 @import "fonts";
 @import "templates";
 @import "mixins";
-
+html{
+  scroll-behavior: smooth;
+}
 .header {
   &-cards {
     display: flex;
@@ -315,15 +317,39 @@ left: -40px;
   }
 }
 .footer{
+  position: relative;
+  &__logo{
+    &__photo{
+      width: 180px;
+      height: 65px;
+    }
+  }
+  padding: 40px 150px 40px 0px;
+  
   background: #010A20;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   &-navigation{
+    &__arrow{
+      cursor: pointer;
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background: #dd2242;
+      border-radius: 50%;
+      font-size: 40px;
+      color: whitesmoke;
+      rotate: -90deg;
+      text-align: center;
+    }
     justify-content: space-between;
     display: flex;
     align-items: center;
     &-list{
+      align-items: center;
       column-gap: 35px;
       font-weight: 700;
       font-size: 18px;
