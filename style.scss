@@ -20,14 +20,26 @@ html{
   &__button {
     color: white;
     background: #dd2242;
-    padding: 26px 64px;
+    padding: 21px 90px;
     border-radius: 211px;
     cursor: pointer;
-    margin-left: 232px;
+    margin-left: 29px;
     margin-top: 20px;
     margin-bottom: 241px;
+    @media (max-width: 375px){
+      width: 315px;
+      height: 60px;
+
+    }
+      
+    
   }
   &__title {
+    @media (max-width: 375px) {
+      font-size: 58px;
+      margin-top: 45px;
+      margin-left: 30px;
+    }
     font-weight: 900;
     font-size: 120px;
     line-height: 108%;
@@ -70,11 +82,17 @@ html{
     &-list {
       display: flex;
       align-items: center;
-      column-gap: 62px;
+      
+       @media (max-width: 375px){
+        column-gap: 22px;
+      }
       &-item__link {
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 700;
+        @media (max-width: 375px){
+        display: none;
+      }
       }
     }
   }
@@ -160,7 +178,7 @@ html{
   }
   &__title {
     text-align: center;
-    margin-top: 130px;
+    padding-top: 130px;
     font-size: 50px;
     font-weight: 900;
   }
