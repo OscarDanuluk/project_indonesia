@@ -390,35 +390,6 @@ html {
     }
   }
 }
-&-cards {
-  display: flex;
-  column-gap: 30px;
-  @media (max-width: 375px) {
-    flex-wrap: wrap;
-  }
-  &-item {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    @media (max-width: 375px) {
-      flex-direction: row;
-
-    }
-    &__photo {
-      @media (max-width:375px) {
-        width: 48%;
-      }
-    }
-  }
-}
-&__title {
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 42px;
-  @media (max-width: 375px) {
-    font-size: 40px;
-  }
-}
 .plan {
   &-list {
     display: flex;
