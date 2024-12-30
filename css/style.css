@@ -415,6 +415,43 @@ html {
   }
 }
 
+.gallery {
+  padding: 177px 372px 229px 378px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .gallery {
+    padding: 30px;
+  }
+}
+.gallery__desc {
+  font-size: 18px;
+  color: #6f7787;
+  margin-bottom: 72px;
+}
+@media (max-width: 375px) {
+  .gallery__desc {
+    font-size: 40px;
+  }
+}
+.gallery-cards {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.gallery-cards-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.gallery__title {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+
 .plan {
   background: #dce8f2;
   padding: 120px 390px;
