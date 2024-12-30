@@ -374,6 +374,7 @@ html {
     column-gap: 30px;
     @media (max-width:375px) {
       flex-wrap: wrap;
+      row-gap: 13px;
     }
     &-item{
       display: flex;
@@ -381,15 +382,17 @@ html {
       row-gap: 30px;
       @media (max-width:375px) {
         flex-direction: row;
+        gap: 13px;
       }
-      &__photo{
+      
+      }
+  }
+}
+.gallery-cards-item__photo{
         @media (max-width:375px) {
           width: 48%;
         }
       }
-    }
-  }
-}
 .plan {
   &-list {
     display: flex;
