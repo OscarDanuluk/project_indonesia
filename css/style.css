@@ -38,6 +38,16 @@ html {
        column-gap: 200px;
   margin-left: 232px;
 }
+@media (max-width: 375px) {
+  .header-cards {
+    flex-direction: column;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    margin-left: 30px;
+    row-gap: 30px;
+    margin-right: 30px;
+  }
+}
 .header__button {
   color: white;
   background: #dd2242;
@@ -50,8 +60,8 @@ html {
 }
 @media (max-width: 375px) {
   .header__button {
-    width: 315px;
-    height: 60px;
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
 .header__title {
@@ -131,11 +141,27 @@ html {
   padding: 338px 207px;
   background: url(/images/card-background.jpg) no-repeat center/cover;
 }
+@media (max-width: 375px) {
+  .main {
+    padding: 40px 30px;
+    row-gap: 30px;
+  }
+}
 .main-card {
   display: flex;
   align-items: center;
   -moz-column-gap: 130px;
        column-gap: 130px;
+}
+@media (max-width: 375px) {
+  .main-card {
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .main-card:nth-child(2) {
+    flex-direction: column-reverse;
+  }
 }
 .main-card-info {
   display: flex;
@@ -150,6 +176,12 @@ html {
   align-self: flex-start;
   margin-top: 32px;
 }
+@media (max-width: 375px) {
+  .main-card-info__btn {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+  }
+}
 .main-card-info__title {
   color: whitesmoke;
 }
@@ -161,9 +193,22 @@ html {
   height: 460px;
   border-radius: 20px;
 }
+@media (max-width: 375px) {
+  .main-card__photo {
+    width: 100%;
+    height: 232px;
+    margin-bottom: 33px;
+  }
+}
 
 .secrets {
   background: url(/images/landscape.png) no-repeat center/cover;
+}
+@media (max-width: 375px) {
+  .secrets {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .secrets-numbers {
   display: flex;
@@ -173,12 +218,25 @@ html {
   margin-top: 1000px;
   background: rgba(2, 12, 33, 0.937254902);
 }
+@media (max-width: 375px) {
+  .secrets-numbers {
+    padding: 70px 30px;
+    margin-top: 735px;
+    width: 100%;
+    margin-left: -31px;
+  }
+}
 .secrets-numbers__title {
   color: white;
   font-size: 60px;
   text-align: center;
   font-weight: 700;
   margin-bottom: 36px;
+}
+@media (max-width: 375px) {
+  .secrets-numbers__title {
+    font-size: 40px;
+  }
 }
 .secrets-numbers__desc {
   color: gray;
@@ -188,6 +246,12 @@ html {
 .secrets-numbers-cards {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .secrets-numbers-cards {
+    flex-direction: column;
+    row-gap: 85px;
+  }
 }
 .secrets-numbers-cards-item__title {
   font-size: 46px;
@@ -207,6 +271,12 @@ html {
   font-size: 50px;
   font-weight: 900;
 }
+@media (max-width: 375px) {
+  .secrets__title {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+}
 .secrets-slider {
   display: flex;
   justify-content: center;
@@ -214,6 +284,17 @@ html {
   -moz-column-gap: 60px;
        column-gap: 60px;
   margin-top: 44px;
+}
+@media (max-width: 375px) {
+  .secrets-slider {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .secrets-slider-cards__image {
+    width: 100%;
+  }
 }
 
 .learn {
@@ -223,12 +304,23 @@ html {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 375px) {
+  .learn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .learn__title {
   margin-top: 250px;
   font-size: 42px;
   text-align: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
+}
+@media (max-width: 375px) {
+  .learn__title {
+    margin-top: 130px;
+  }
 }
 .learn__desc {
   font-size: 18px;
@@ -244,6 +336,12 @@ html {
   height: 60px;
   margin-bottom: 260px;
 }
+@media (max-width: 375px) {
+  .learn__btn {
+    width: 100%;
+    margin-bottom: 116px;
+  }
+}
 
 .life {
   background: url(/images/life-bg.png) no-repeat center/cover;
@@ -251,15 +349,37 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 375px) {
+  .life {
+    padding: 80px 30px;
+  }
+}
 .life-cards {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .life-cards {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
 .life-cards-item {
   display: flex;
   align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media (max-width: 375px) {
+  .life-cards-item__photo {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .life-cards-item {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .life-cards-item-info {
   display: flex;
@@ -281,12 +401,22 @@ html {
   font-weight: 700;
   margin-bottom: 120px;
 }
+@media (max-width: 375px) {
+  .life__title {
+    margin-bottom: 70px;
+  }
+}
 .life__poster {
   margin-bottom: 124px;
 }
+@media (max-width: 375px) {
+  .life__poster {
+    margin-bottom: 40px;
+  }
+}
 
 .plan {
-  background: #DCE8F2;
+  background: #dce8f2;
   padding: 120px 390px;
 }
 .plan-list {
@@ -302,6 +432,11 @@ html {
   height: 83%;
   background: rgba(0, 0, 0, 0.299);
   left: -40px;
+}
+@media (max-width: 375px) {
+  .plan-list::before {
+    display: none;
+  }
 }
 .plan-list-item {
   position: relative;
@@ -326,6 +461,14 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 375px) {
+  .plan-list-item::before {
+    left: 42%;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+  }
+}
 .plan-list-item__desc {
   color: grey;
 }
@@ -334,10 +477,26 @@ html {
   font-weight: 700;
   margin-bottom: 28px;
 }
+@media (max-width: 375px) {
+  .plan-list-item__title {
+    text-align: center;
+  }
+}
 .plan__title {
   font-weight: 700;
   font-size: 60px;
   margin-bottom: 44px;
+}
+@media (max-width: 375px) {
+  .plan__title {
+    font-size: 40px;
+    max-block-size: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .plan {
+    padding: 28px 58px;
+  }
 }
 .plan__btn {
   color: white;
@@ -349,11 +508,17 @@ html {
 .footer {
   position: relative;
   padding: 40px 150px 40px 0px;
-  background: #010A20;
+  background: #010a20;
 }
 .footer__logo__photo {
   width: 180px;
   height: 65px;
+}
+@media (max-width: 375px) {
+  .footer {
+    padding: 150px 101px 83px 101px;
+    margin-bottom: 40px;
+  }
 }
 .footer-navigation {
   justify-content: space-between;
@@ -377,6 +542,17 @@ html {
   rotate: -90deg;
   text-align: center;
 }
+@media (max-width: 375px) {
+  .footer-navigation__arrow {
+    bottom: 446px;
+    right: 130px;
+  }
+}
+@media (max-width: 375px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
+}
 .footer-navigation-list {
   align-items: center;
   -moz-column-gap: 35px;
@@ -386,4 +562,9 @@ html {
   display: flex;
   flex-direction: row;
   color: white;
+}
+@media (max-width: 375px) {
+  .footer-navigation-list {
+    flex-direction: column;
+  }
 }
