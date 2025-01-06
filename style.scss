@@ -6,6 +6,44 @@
 html {
   scroll-behavior: smooth;
 }
+.burger-navigation-list{
+  display: none;
+}
+@media (max-width: 375px) {
+  .burger{
+    &__close{
+      color: red;
+      font-size: 40px;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+    }
+  &-navigation{
+    &-list{
+      display: flex;
+      translate: -200% 0%;
+      transition: all .6s;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      position: fixed;
+      background: rgb(0, 0, 0);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      justify-content: center;
+      z-index: 10;
+      &-item{
+        &__link{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+}
 .header {
   &-cards {
     display: flex;
