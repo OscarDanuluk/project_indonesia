@@ -54,7 +54,7 @@ html {
   padding: 21px 90px;
   border-radius: 211px;
   cursor: pointer;
-  margin-left: 29px;
+  margin-left: 230px;
   margin-top: 20px;
   margin-bottom: 241px;
 }
@@ -62,6 +62,7 @@ html {
   .header__button {
     width: 80%;
     margin-bottom: 30px;
+    margin-left: 29px;
   }
 }
 .header__title {
@@ -115,6 +116,8 @@ html {
 .header-navigation-list {
   display: flex;
   align-items: center;
+  -moz-column-gap: 62px;
+       column-gap: 62px;
 }
 @media (max-width: 375px) {
   .header-navigation-list {

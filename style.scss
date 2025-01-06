@@ -30,12 +30,13 @@ html {
     padding: 21px 90px;
     border-radius: 211px;
     cursor: pointer;
-    margin-left: 29px;
+    margin-left: 230px;
     margin-top: 20px;
     margin-bottom: 241px;
     @media (max-width: 375px) {
       width: 80%;
       margin-bottom: 30px;
+      margin-left: 29px;
     }
   }
   &__title {
@@ -86,7 +87,7 @@ html {
     &-list {
       display: flex;
       align-items: center;
-
+      column-gap: 62px;
       @media (max-width: 375px) {
         column-gap: 22px;
       }
